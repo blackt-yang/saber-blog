@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 英灵骑士团 ValhallaSaber
-subtitle: '光剑/星球大战/Hema'
+title: 龙渊·水光
+subtitle: '光剑/星球大战/Hema/中国剑'
 description: ''
 keywords:
-author: 英灵骑士团
+author: 龙渊·水光
 language: zh-CN
 timezone: ''
 
@@ -98,6 +98,23 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+
+search:
+  path: search.xml
+  field: post
+  content: true
+
+daodao_swiper:
+  url: https://6865-hello-cloudbase-9gfy6ilva49e1cb3-1306702363.tcb.qcloud.la/json/bber.json # 这里是你的转存的json地址
+  fliter: "['img','iframe', 'png', 'jpg']" # 将png jpg img等链接过滤
+  priority: 10
+  enable: true
+  enable_page: / # 仅在首页显示
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  temple_html: '<div class="recent-post-item" style="height: auto;width: 100%"><div class="bbTimeList container" style="height: auto;width: 100%" id="bbTimeList"><i class="bber-gotobb fas fa-bullhorn" onclick="location=&#39;/talks/&#39;" title="哔哔点啥"></i><div class="swiper-container" id="bbtalk"><div class="swiper-wrapper" id="bber-talk" onclick="location=&#39;/talks/&#39;"></div></div><i class="bber-gotobb fas fa-arrow-circle-right" onclick="location=&quot;/talks/&quot;" title="查看全文"></i></div></div>'
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

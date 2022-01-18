@@ -42,8 +42,10 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  fas fa-envelope: mailto:blackt.yang@gmail.com || Email
+  fab fa-telegram: mailto:blackt.yang@gmail.com || Telegram
+  fab fa-qq: mailto:blackt.yang@gmail.com || QQ
+  fab fa-weixin: mailto:blackt.yang@gmail.com || Wechat
 
 # search (搜索)
 # --------------------------------------
@@ -56,7 +58,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # Math (數學)
 # --------------------------------------
@@ -84,14 +86,14 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: /head.jpg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: /img/meyer-rapier.png
+index_img: /img/index.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
@@ -261,8 +263,8 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
-  # - Valine
-  # - Disqus
+    - Twikoo
+    - Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -273,7 +275,7 @@ comments:
 # disqus
 # https://disqus.com/
 disqus:
-  shortname:
+  shortname: abysaber
   apikey: # For newest comments widget
 
 # Alternative Disqus - Render comments with Disqus API
@@ -359,8 +361,8 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
-  region:
+  envId: hello-cloudbase-9gfy6ilva49e1cb3
+  region: ap-shanghai
   visitor: false
   option:
 
@@ -506,7 +508,7 @@ tag_ui: # 留空或 index
 background:
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -520,12 +522,12 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
-  mobile: false
+  click_to_change: true
+  mobile: true
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
@@ -552,7 +554,7 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999 # -1 or 9999
   mobile: false
 
@@ -593,9 +595,9 @@ font:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
-blog_title_font:
-  font_link:
-  font-family:
+blog_title_font: 
+  font_link: 'https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap'
+  font-family: 'ZCOOL XiaoWei' 
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -623,7 +625,7 @@ subtitle:
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - 光剑/星球大战/Hema
+    - 光剑/星球大战/Hema/中国剑
     - 原力与我们同在
 
 # Loading Animation (加載動畫)
@@ -640,11 +642,11 @@ aside:
   position: right # left or right
   card_author:
     enable: true
-    description: '光剑/星球大战/Hema'
+    description: '光剑/星球大战/Hema/中国剑'
     button:
       enable: true
-      icon: fab fa-github
-      text: Follow Me
+      icon: iconfont icon-bilibili-fill
+      text: 关注我们
       link: https://github.com/xxxxxx
   card_announcement:
     enable: true
@@ -775,7 +777,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -797,12 +799,12 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
 
 # Lazyload (圖片懶加載)
@@ -836,7 +838,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/font_3150192_007e1i7pz3do7.css">
   bottom:
     # - <script src="xxxx"></script>
 
