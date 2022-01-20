@@ -155,7 +155,7 @@ abbrlink:
   force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
 
 # webpushr
-  webPushNotification:
+webPushNotification:
   webpushrKey: "2dfedde70b103c8810a76c0b239afe01"
   webpushrAuthToken: "44664"
   trackingCode: "BFqhqGW19PkfAVHkepRL2ytG8UtHzpkAEslRrsa9S1aS00ndsdD6yE7qFlFAi9gsiH2SW60AFH6LwUm_phDSqns"
