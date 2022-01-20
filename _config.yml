@@ -4,7 +4,7 @@
 
 # Site
 title: 龙渊·水光
-subtitle: '光剑/星球大战/Hema/中国剑'
+subtitle: '光剑/星球大战/Hema'
 description: ''
 keywords:
 author: 龙渊·水光
@@ -14,7 +14,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -94,6 +94,72 @@ include:
 exclude:
 ignore:
 
+daodao_swiper:
+  url: https://6865-hello-cloudbase-9gfy6ilva49e1cb3-1306702363.tcb.qcloud.la/json/bber.json # 这里是你的转存的json地址
+  fliter: "['img','iframe', 'png', 'jpg']" # 将png jpg img等链接过滤
+  priority: 20
+  enable: true
+  enable_page: / # 仅在首页显示
+  layout:
+    type: id
+    name: recent-posts
+    index: 1
+  temple_html: '<div class="recent-post-item" style="height: auto;width: 100%"><div class="bbTimeList container" style="height: auto;width: 100%" id="bbTimeList"><i class="bber-gotobb fas fa-bullhorn" onclick="location=&#39;/life/&#39;" title="动态"></i><div class="swiper-container" id="bbtalk"><div class="swiper-wrapper" id="bber-talk" onclick="location=&#39;/talks/&#39;"></div></div><i class="bber-gotobb fas fa-arrow-circle-right" onclick="location=&quot;/talks/&quot;" title="查看全文"></i></div></div>'
+
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
+  enable: true # 开关
+  priority: 10 #过滤器优先权
+  enable_page: / # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 2
+  default_descr: 再怎么看我也不知道怎么描述它的啦
+  swiper_css: https://unpkg.zhimg.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://unpkg.zhimg.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://unpkg.zhimg.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://unpkg.zhimg.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+# tag-plugins-plus
+# see https://akilar.top/posts/615e2dec/
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签依赖注入开关
+  link:
+    placeholder: /img/link.png #link_card标签默认的图标图片
+  CDN:
+    anima: https://unpkg.zhimg.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    issues: https://unpkg.zhimg.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
+    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    carousel: https://unpkg.zhimg.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    tag_plugins_css: https://unpkg.zhimg.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+
+# abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32
+  rep: hex        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
+
+# webpushr
+  webPushNotification:
+  webpushrKey: "2dfedde70b103c8810a76c0b239afe01"
+  webpushrAuthToken: "44664"
+  trackingCode: "BFqhqGW19PkfAVHkepRL2ytG8UtHzpkAEslRrsa9S1aS00ndsdD6yE7qFlFAi9gsiH2SW60AFH6LwUm_phDSqns"
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -103,18 +169,6 @@ search:
   path: search.xml
   field: post
   content: true
-
-daodao_swiper:
-  url: https://6865-hello-cloudbase-9gfy6ilva49e1cb3-1306702363.tcb.qcloud.la/json/bber.json # 这里是你的转存的json地址
-  fliter: "['img','iframe', 'png', 'jpg']" # 将png jpg img等链接过滤
-  priority: 10
-  enable: true
-  enable_page: / # 仅在首页显示
-  layout:
-    type: id
-    name: recent-posts
-    index: 0
-  temple_html: '<div class="recent-post-item" style="height: auto;width: 100%"><div class="bbTimeList container" style="height: auto;width: 100%" id="bbTimeList"><i class="bber-gotobb fas fa-bullhorn" onclick="location=&#39;/talks/&#39;" title="哔哔点啥"></i><div class="swiper-container" id="bbtalk"><div class="swiper-wrapper" id="bber-talk" onclick="location=&#39;/talks/&#39;"></div></div><i class="bber-gotobb fas fa-arrow-circle-right" onclick="location=&quot;/talks/&quot;" title="查看全文"></i></div></div>'
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

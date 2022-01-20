@@ -2,6 +2,7 @@
 title: talks
 date: 2022-01-19 02:16:19
 ---
+## 动态
 <!--  自言自语  -->
 <div id='speak'>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
@@ -22,7 +23,7 @@ ispeakBber
     })
     .then(function() {
         // 哔哔加载完成后的回调函数，你可以写你自己的功能
-        console.log('哔哔 加载完成')
+        // console.log('动态 加载完成')
     })
 </script>
 </div>
