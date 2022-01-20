@@ -44,8 +44,9 @@ copy:
 social:
   fas fa-envelope: mailto:blackt.yang@gmail.com || Email
   fab fa-telegram: mailto:blackt.yang@gmail.com || Telegram
-  fab fa-qq: mailto:blackt.yang@gmail.com || QQ
-  fab fa-weixin: mailto:blackt.yang@gmail.com || Wechat
+  fab fa-qq: / || QQ
+  fab fa-weixin: / || Wechat
+  fab fa-weibo: https://weibo.com/thrawn || 微博
 
 # search (搜索)
 # --------------------------------------
@@ -650,7 +651,7 @@ aside:
       link: https://github.com/xxxxxx
   card_announcement:
     enable: true
-    content: 欢迎来到<b>水光·龙渊</b>!🔥🔥<br><div id="webpushr-subscription-button" data-size="medium" data-button-text="订阅通知" data-subscriber-count-text="人已订阅" data-background-color="#3584e4"></div>
+    content: 欢迎来到<b>水光·龙渊</b>!🔥🔥<br>博主telegram帐号:<img src="/img/channel.jpg" width="50%"/><br><div id="webpushr-subscription-button" data-size="small" data-show-subscriber-count="false" data-button-text="订阅通知"></div>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -838,7 +839,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="//at.alicdn.com/t/font_3150192_007e1i7pz3do7.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/font_3150192_a9xe5huid7p.css">
   bottom:
     # - <script src=""></script>
 
