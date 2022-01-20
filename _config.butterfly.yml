@@ -43,7 +43,7 @@ copy:
 #   icon: link || the description
 social:
   fas fa-envelope: mailto:blackt.yang@gmail.com || Email
-  fab fa-telegram: mailto:blackt.yang@gmail.com || Telegram
+  fab fa-telegram: https://t.me/BlackTYang || Telegram
   fab fa-qq: / || QQ
   fab fa-weixin: / || Wechat
   fab fa-weibo: https://weibo.com/thrawn || 微博
@@ -648,7 +648,7 @@ aside:
       enable: true
       icon: iconfont icon-bilibili-fill
       text: 关注我们
-      link: https://github.com/xxxxxx
+      link: https://space.bilibili.com/442263994
   card_announcement:
     enable: true
     content: 欢迎来到<b>水光·龙渊</b>!🔥🔥<br>博主telegram帐号:<br><img src="/img/channel.jpg" width="50%"/><br><div id="webpushr-subscription-button" data-size="small" data-show-subscriber-count="false" data-button-text="订阅通知"></div>
