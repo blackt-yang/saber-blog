@@ -651,7 +651,7 @@ aside:
       link: https://space.bilibili.com/442263994
   card_announcement:
     enable: true
-    content: 欢迎来到<b>水光·龙渊</b>!🔥🔥<br>博主telegram帐号:<br><img src="/img/channel.jpg" width="50%"/><br><div id="webpushr-subscription-button" data-size="small" data-show-subscriber-count="false" data-button-text="订阅通知"></div>
+    content: 欢迎来到<b>水光·龙渊</b>!🔥🔥<br>博主telegram频道:<br><img src="/img/channel.jpg" width="50%"/><br><div id="webpushr-subscription-button" data-size="small" data-show-subscriber-count="false" data-button-text="订阅通知"></div>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
