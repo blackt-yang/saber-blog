@@ -1,0 +1,36 @@
+ /* Twikoo评论美化 */
+
+ .tk-submit{
+    border: #90939950 dashed 1px!important;
+    padding: 15px;
+    border-radius: 10px;
+     }
+    
+     .el-textarea__inner {
+      min-height: 200px!important;
+      background-image: url("https://cdn.jsdelivr.net/gh/skyilz/CDN@master/img/comment_bg.png")!important;
+      background-position: right bottom!important;
+      background-repeat: no-repeat!important;
+      border: none!important;
+     }
+    
+     .el-textarea__inner:focus{
+      background-image: none!important;
+     }
+    
+     .el-input-group__prepend{
+      background: transparent!important;
+      border: none!important;
+      border-bottom: #90939950 dashed 1px!important;
+     }
+    
+     .el-input__inner{
+    background: transparent!important;
+    border: none!important;
+    border-bottom: #90939950 dashed 1px!important;
+     }
+    
+     .el-input__inner:focus{
+      border-color: #409eff!important;
+     }
+    
