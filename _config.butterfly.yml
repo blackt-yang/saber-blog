@@ -842,6 +842,7 @@ inject:
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_3150192_a9xe5huid7p.css">
     - <link rel="stylesheet" href="/css/twikoo.css">
     - <link rel="stylesheet" href="/css/font.css">
+    - <link rel="stylesheet" href="/css/index-font.css">
   bottom:
     # - <script src=""></script>
 
