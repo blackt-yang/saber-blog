@@ -1,3 +1,9 @@
 .recent-post-item .article-title {
     font-family: FZQKBYSJW;
+    font-weight: bolder;
+}
+
+.blog-slider__title {
+    font-family: FZQKBYSJW;
+    font-weight: 1000;
 }
