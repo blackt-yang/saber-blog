@@ -597,8 +597,8 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font: 
-  font_link: 'https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap'
-  font-family: 'ZCOOL XiaoWei' 
+  font_link: 
+  font-family: 'FZQKBYSJW' 
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -841,6 +841,7 @@ inject:
   head:
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_3150192_a9xe5huid7p.css">
     - <link rel="stylesheet" href="/css/twikoo.css">
+    - <link rel="stylesheet" href="/css/font.css">
   bottom:
     # - <script src=""></script>
 
