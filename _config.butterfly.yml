@@ -362,7 +362,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: hello-cloudbase-9gfy6ilva49e1cb3
+  envId: abysaber-8g0cgtbe6673060a
   region: ap-shanghai
   visitor: false
   option:
