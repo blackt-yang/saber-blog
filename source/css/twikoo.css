@@ -8,7 +8,7 @@
     
      .el-textarea__inner {
       min-height: 200px!important;
-      background-image: url("https://cdn.jsdelivr.net/gh/skyilz/CDN@master/img/comment_bg.png")!important;
+      background-image: url("/img/man.png")!important;
       background-position: right bottom!important;
       background-repeat: no-repeat!important;
       border: none!important;
